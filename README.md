@@ -1,75 +1,70 @@
-# Context Research Studio
+# 🚀 Context Research Studio
 
 An AI-powered research dashboard that uses Context.dev APIs to search, crawl, scrape, analyze, and synthesize information from multiple web sources into structured research reports.
 
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Django](https://img.shields.io/badge/Backend-Django%20REST%20Framework-green)
-![Tailwind](https://img.shields.io/badge/UI-TailwindCSS-cyan)
-![License](https://img.shields.io/badge/License-MIT-purple)
-
 ---
 
-## Overview
+## 📖 Overview
 
-Context Research Studio is a modern AI research platform designed to transform raw web information into reliable, evidence-based research reports.
+Context Research Studio is a modern research platform designed to transform raw web information into reliable, evidence-based research reports.
 
 Users can ask questions such as:
 
-* How many AirPods were sold this year?
-* Which company is leading humanoid robotics?
-* Top smartphone sales in India 2026
-* Latest AI tools used by software developers
+- How many AirPods were sold this year?
+- Which company is leading humanoid robotics?
+- Top smartphone sales in India 2026
+- Latest AI tools used by software developers
 
 The platform automatically:
 
-* Understands research intent
-* Discovers relevant sources
-* Crawls and scrapes websites using Context.dev
-* Extracts statistics and structured insights
-* Verifies findings across multiple sources
-* Calculates confidence scores
-* Generates a professional research report
+- Understands research intent
+- Discovers relevant sources
+- Crawls and scrapes websites using Context.dev
+- Extracts statistics and structured insights
+- Verifies findings across multiple sources
+- Calculates confidence scores
+- Generates professional research reports
 
 ---
 
-## Features
+## ✨ Features
 
-### AI-Powered Research
+### Intelligent Research Engine
 
-* Natural language query input
-* Multi-source web research
-* Automated information extraction
-* Structured research reports
-* Confidence scoring
+- Natural language query input
+- Multi-source web research
+- Automated information extraction
+- Structured research reports
+- Confidence scoring
 
 ### Context.dev Integration
 
-* URL scraping
-* Website crawling
-* Structured data extraction
-* Screenshots and media collection
-* Brand and company intelligence
+- URL scraping
+- Website crawling
+- Structured data extraction
+- Screenshots and media collection
+- Brand and company intelligence
 
 ### Research Reports
 
 Each report includes:
 
-* Executive summary
-* Key statistics
-* Important highlights
-* Source citations
-* Timeline insights
-* Image gallery
-* Confidence score
-* Suggested follow-up questions
+- Executive summary
+- Key statistics
+- Important highlights
+- Source citations
+- Timeline insights
+- Image gallery
+- Confidence score
+- Suggested follow-up questions
 
 ### Premium UI
 
-* Glassmorphism design
-* Animated gradients
-* Dark research-lab theme
-* Framer Motion interactions
-* Responsive dashboard experience
+- Glassmorphism design
+- Animated gradients
+- Dark research-lab theme
+- Framer Motion interactions
+- Responsive dashboard experience
 
 ### Demo Mode
 
@@ -79,92 +74,107 @@ If Context.dev credentials are unavailable, the application automatically switch
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
 
-* React
-* Vite
-* Tailwind CSS
-* Framer Motion
-* Lucide React
-* Recharts
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Recharts
 
 ### Backend
 
-* Django
-* Django REST Framework
-* Python
+- Django
+- Django REST Framework
+- Python
 
-### AI & Data Layer
+### Data Layer
 
-* Context.dev APIs
-* OpenAI (Optional)
-* Gemini (Optional)
+- Context.dev APIs
+- Multi-source web research
+- Structured data extraction
+- Source verification engine
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
-context-research-studio/
+research-agent/
 
-frontend/
+├── backend_django/
 │
-├── src/
-│   ├── components/
-│   │   ├── SearchHero.jsx
-│   │   ├── ResearchProgress.jsx
-│   │   ├── AnswerCard.jsx
-│   │   ├── StatsGrid.jsx
-│   │   ├── SourcePanel.jsx
-│   │   ├── ImageGallery.jsx
-│   │   ├── Timeline.jsx
-│   │   ├── FollowupQuestions.jsx
-│   │   └── EmptyState.jsx
+│   ├── backend_django/
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
 │   │
-│   ├── pages/
-│   │   └── Home.jsx
+│   ├── research_api/
+│   │   ├── __init__.py
+│   │   ├── views.py
+│   │   │
+│   │   ├── services/
+│   │   │   ├── context_client.py
+│   │   │   └── research_agent.py
+│   │   │
+│   │   └── utils/
+│   │       ├── extract_stats.py
+│   │       └── source_ranker.py
 │   │
-│   ├── App.jsx
-│   └── main.jsx
+│   ├── .env
+│   ├── .env.example
+│   ├── db.sqlite3
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── test_research.py
 │
-backend/
-│
-├── config/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-├── apps/
-│   └── research/
-│       ├── views.py
-│       ├── serializers.py
-│       ├── urls.py
-│       │
-│       ├── services/
-│       │   ├── context_client.py
-│       │   └── research_agent.py
-│       │
-│       └── utils/
-│           ├── source_ranker.py
-│           └── extract_stats.py
-│
-├── manage.py
-└── requirements.txt
+└── frontend/
+    │
+    ├── public/
+    │   ├── favicon.svg
+    │   └── icons.svg
+    │
+    ├── src/
+    │   ├── assets/
+    │   │   ├── hero.png
+    │   │   ├── react.svg
+    │   │   └── vite.svg
+    │   │
+    │   ├── components/
+    │   │   ├── AnswerCard.jsx
+    │   │   ├── EmptyState.jsx
+    │   │   ├── FollowupQuestions.jsx
+    │   │   ├── ImageGallery.jsx
+    │   │   ├── ResearchProgress.jsx
+    │   │   ├── SearchHero.jsx
+    │   │   └── SourcePanel.jsx
+    │   │
+    │   ├── App.jsx
+    │   ├── App.css
+    │   ├── index.css
+    │   └── main.jsx
+    │
+    ├── index.html
+    ├── eslint.config.js
+    ├── package.json
+    └── .gitignore
 ```
 
 ---
 
-## Installation
+## ⚙️ Installation
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/context-research-studio.git
+git clone https://github.com/your-username/research-agent.git
 
-cd context-research-studio
+cd research-agent
 ```
 
 ---
@@ -177,7 +187,7 @@ Create a virtual environment:
 python -m venv venv
 ```
 
-Activate:
+Activate the environment:
 
 ### Windows
 
@@ -185,7 +195,7 @@ Activate:
 venv\Scripts\activate
 ```
 
-### Mac/Linux
+### Linux / macOS
 
 ```bash
 source venv/bin/activate
@@ -197,7 +207,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Create environment file:
+Create a `.env` file:
 
 ```env
 DEBUG=True
@@ -205,8 +215,6 @@ DEBUG=True
 SECRET_KEY=your-secret-key
 
 CONTEXT_API_KEY=
-
-AI_API_KEY=
 ```
 
 Run migrations:
@@ -215,13 +223,13 @@ Run migrations:
 python manage.py migrate
 ```
 
-Start backend:
+Start the backend:
 
 ```bash
 python manage.py runserver
 ```
 
-Backend runs on:
+Backend URL:
 
 ```text
 http://localhost:8000
@@ -231,7 +239,7 @@ http://localhost:8000
 
 ## Frontend Setup
 
-Install packages:
+Install dependencies:
 
 ```bash
 npm install
@@ -243,7 +251,7 @@ Start development server:
 npm run dev
 ```
 
-Frontend runs on:
+Frontend URL:
 
 ```text
 http://localhost:5173
@@ -251,7 +259,7 @@ http://localhost:5173
 
 ---
 
-## API Endpoint
+## 🔍 API Endpoint
 
 ### Research Query
 
@@ -288,7 +296,7 @@ Example Response:
 
 ---
 
-## Research Pipeline
+## 📊 Research Pipeline
 
 The platform follows a multi-stage research workflow:
 
@@ -296,38 +304,38 @@ The platform follows a multi-stage research workflow:
 
 Identify:
 
-* Intent
-* Entities
-* Industry
-* Timeframe
+- Intent
+- Entities
+- Industry
+- Timeframe
 
 ### 2. Source Discovery
 
 Locate:
 
-* Company websites
-* Industry reports
-* Research articles
-* News publications
+- Company websites
+- Industry reports
+- Research articles
+- News publications
 
 ### 3. Content Collection
 
 Using Context.dev:
 
-* Crawl pages
-* Scrape content
-* Capture screenshots
-* Extract metadata
+- Crawl pages
+- Scrape content
+- Capture screenshots
+- Extract metadata
 
 ### 4. Data Extraction
 
 Extract:
 
-* Statistics
-* Dates
-* Organizations
-* Products
-* Trends
+- Statistics
+- Dates
+- Organizations
+- Products
+- Trends
 
 ### 5. Verification
 
@@ -335,38 +343,38 @@ Compare findings across sources.
 
 Detect:
 
-* Agreement
-* Contradictions
-* Missing evidence
+- Agreement
+- Contradictions
+- Missing evidence
 
 ### 6. Report Generation
 
 Generate:
 
-* Summary
-* Highlights
-* Timeline
-* Confidence score
-* Follow-up questions
+- Summary
+- Highlights
+- Timeline
+- Confidence score
+- Follow-up questions
 
 ---
 
-## Demo Mode
+## 🎯 Demo Mode
 
 If:
 
 ```env
-CONTEXT_API_KEY=
+CONTEXT_API_KEY=your_context_api_key (from context.dev)
 ```
 
 is empty, the system automatically switches to Demo Mode.
 
 Users can still:
 
-* Search
-* View reports
-* Explore UI
-* Test interactions
+- Search
+- View reports
+- Explore the interface
+- Test functionality
 
 The report will clearly display:
 
@@ -374,77 +382,32 @@ The report will clearly display:
 
 ---
 
-## Confidence Score
+## 🔐 Accuracy Principles
 
-Scores are calculated using:
-
-| Factor              | Weight |
-| ------------------- | ------ |
-| Number of Sources   | High   |
-| Source Authority    | High   |
-| Data Consistency    | High   |
-| Data Freshness      | Medium |
-| Structured Evidence | Medium |
-
-Confidence Range:
-
-| Score       | Meaning              |
-| ----------- | -------------------- |
-| 0.90 - 1.00 | Very High Confidence |
-| 0.75 - 0.89 | High Confidence      |
-| 0.50 - 0.74 | Moderate Confidence  |
-| Below 0.50  | Low Confidence       |
+- Never invent facts
+- Never invent statistics
+- Always provide source references
+- Display confidence scores
+- Highlight source disagreements
+- Separate verified data from inferred estimates
 
 ---
 
-## Future Enhancements
-
-* Research history
-* User accounts
-* Saved reports
-* PDF export
-* Team collaboration
-* AI-generated charts
-* Source credibility ranking
-* Real-time monitoring
-* Scheduled research jobs
-* Multi-language research
-
----
-
-## Design Philosophy
-
-Context Research Studio is built around three principles:
-
-### Transparency
-
-Every claim should be traceable to a source.
-
-### Accuracy
-
-Never invent facts or statistics.
-
-### Research First
-
-Focus on evidence-backed answers instead of generic AI responses.
-
----
-
-## License
+## 📜 License
 
 MIT License
 
 ---
 
-## Acknowledgements
+##  Acknowledgements
 
 Built with:
 
-* Context.dev
-* Django REST Framework
-* React
-* Tailwind CSS
-* Framer Motion
-* Recharts
+- Context.dev
+- Django REST Framework
+- React
+- Tailwind CSS
+- Framer Motion
+- Recharts
 
-Designed as a premium AI-powered research workspace for analysts, students, founders, developers, and researchers.
+Designed as a premium research workspace for analysts, students, founders, developers, and researchers.
